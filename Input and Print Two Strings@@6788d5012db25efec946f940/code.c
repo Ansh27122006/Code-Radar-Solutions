@@ -6,6 +6,8 @@ char* welcome() {
 
 int main() {
     char s1[30], s2[30];
-    printf("%s", welcome());
+    scanf("%s",&s1);
+    scanf("%s",&s2);
+    printf("You entered: %s and %s",s1,s2);
     return 0;
 }
