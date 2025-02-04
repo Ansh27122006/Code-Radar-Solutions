@@ -7,7 +7,7 @@ char* welcome() {
 int main() {
     int x,y,p;
     scanf("%d %d",&x,&y);
-    p=y-x
+    p=y-x;
     if(p>0){
         printf("Profit");
     }
