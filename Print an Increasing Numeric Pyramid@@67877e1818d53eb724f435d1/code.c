@@ -5,10 +5,11 @@ char* welcome() {
 }
 
 int main() {
-    int x,n=1;
+    int x;
     scanf("%d", &x);
 
     for (int i=1;i<=x;++i) {
+        int n=1;
         for (int j=1;j<=x-i;++j) {
             printf(" ");
         }
