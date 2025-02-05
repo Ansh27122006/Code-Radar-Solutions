@@ -13,10 +13,10 @@ int main() {
     } else if (z == '*') {
         printf("%d", x * y);
     } else if (z == '/') {
-        if (y != 0) {  // Check for division by zero
+        if (y != 0) {
             printf("%d", x / y);
         } else {
-            printf("error: division by zero");
+            printf("error");
         }
     } else {
         printf("error");
