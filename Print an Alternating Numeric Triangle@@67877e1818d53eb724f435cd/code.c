@@ -17,6 +17,11 @@ int main() {
             }
         }
         printf("\n");
+        if(n==0){
+                n=1;
+        }else{
+            n=0;
+            }
     }
     return 0;
 }
