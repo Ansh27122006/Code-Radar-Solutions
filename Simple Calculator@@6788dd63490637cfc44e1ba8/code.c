@@ -1,23 +1,26 @@
 #include <stdio.h>
 
 int main() {
-    int x,y;
+    int x, y;
     char z;
-    scanf("%d %d %c",&x,&y,&z);
-    if(z=='+'){
-        printf("%d",x+y);
-    }
-    else if(z=='-'){
-        printf("%d",x-y);
-    }
-    else if(z=='*'){
-        printf("%d",x*y);
-    }
-    else if(z=='/'){
-        printf("%d",x/y);
-    }
-    else{
+    scanf("%d %d", &x, &y);
+    scanf(" %c", &z);  // Added a space before %c to consume the newline character
+
+    if (z == '+') {
+        printf("%d", x + y);
+    } else if (z == '-') {
+        printf("%d", x - y);
+    } else if (z == '*') {
+        printf("%d", x * y);
+    } else if (z == '/') {
+        if (y != 0) {  // Check for division by zero
+            printf("%d", x / y);
+        } else {
+            printf("error: division by zero");
+        }
+    } else {
         printf("error");
     }
+
     return 0;
 }
