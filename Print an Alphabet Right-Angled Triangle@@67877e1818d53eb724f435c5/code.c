@@ -5,11 +5,11 @@ char* welcome() {
 }
 
 int main() {
-    int x , ch=65;
+    int x, c=65;
     scanf("%d",&x);
-    for(int i=x;i>0;i--){
+    for(int i=1;i<=x;i++){
         for(int j=0;j<i;j++){
-            printf("%c ",j+ch);
+            printf("%c ",j+c);
         }
         printf("\n");
     }
