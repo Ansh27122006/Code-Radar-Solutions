@@ -4,15 +4,18 @@ int main() {
     int x, y;
     char z;
     scanf("%d %d", &x, &y);
-    scanf(" %c", &z);  // Added a space before %c to consume the newline character
+    scanf(" %c", &z);
 
     if (z == '+') {
         printf("%d", x + y);
-    } else if (z == '-') {
+    } 
+    else if (z == '-') {
         printf("%d", x - y);
-    } else if (z == '*') {
+    } 
+    else if (z == '*') {
         printf("%d", x * y);
-    } else if (z == '/') {
+    } 
+    else if (z == '/') {
         if (y != 0) {
             printf("%d", x / y);
         } else {
