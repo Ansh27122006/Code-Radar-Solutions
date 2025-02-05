@@ -1,27 +1,19 @@
 #include <stdio.h>
 
-char* welcome() {
-    return "Welcome to Code Radar!";
-}
-
 int main() {
-    int x,n=1;
-    scanf("%d",&x);
-    for(int i=1;i<=x;i++){
-        for(int j=0;j<i;j++){
-            printf("%d ",n);
-            if(n==0){
-                n=1;
-            }else{
-                n=0;
+    int n;
+    scanf("%d", &n);
+
+    for (int i = 1; i <= n; i++) {
+        for (int j = 1; j <= i; j++) {
+            if ((i + j) % 2 == 0) {
+                printf("*");
+            } else {
+                printf("#");
             }
         }
         printf("\n");
-        if(n==0){
-                n=1;
-        }else{
-            n=0;
-            }
     }
+
     return 0;
 }
