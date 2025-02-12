@@ -1,5 +1,5 @@
 #include <stdio.h>
-int isPrime(n){
+int isPrime(int n){
     return 1;
 }
 
