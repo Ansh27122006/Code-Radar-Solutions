@@ -3,16 +3,13 @@
 
 int main() {
     char st[30];
-    scanf("%s", st);  // No & needed
+    scanf("%s", st);
     int l = strlen(st);
-    char s[30];  // Array for reversed string
-    
-    // Reverse string properly
+    char s[30];
     for(int i=l-1,j=0;i>=0;i--,j++) {
-        s[j] = st[i];  // Correct index mapping
+        s[j] = st[i];
     }
-    s[l] = '\0';  // Null-terminate the string
-    
+    s[l] = '\0';
     printf("%s", s);
     return 0;
 }
