@@ -8,7 +8,7 @@ int main() {
     char s[30];  // Array for reversed string
     
     // Reverse string properly
-    for(int i=l 1,j=0;i>=0;i--,j++) {
+    for(int i=l,j=0;i>=0;i--,j++) {
         s[j] = st[i];  // Correct index mapping
     }
     s[l] = '\0';  // Null-terminate the string
