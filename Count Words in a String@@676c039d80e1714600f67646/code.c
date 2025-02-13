@@ -3,10 +3,11 @@
 
 int main() {
     char s[30];
-    fgets(s, strlen(s), stdin);
+    fgets(s, sizeof(s), stdin);
     int l = strlen(s);
     int c=0;
     for(int i=0;i<l;i++) {
+        printf("%c",s[i])
         if(s[i]==' '){
             c++;
         }
