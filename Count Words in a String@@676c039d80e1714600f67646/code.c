@@ -7,7 +7,7 @@ int main() {
     int l = strlen(s);
     int c=0;
     for(int i=0;i<l;i++) {
-        printf("%c",s[i])
+        printf("%c",s[i]);
         if(s[i]==' '){
             c++;
         }
