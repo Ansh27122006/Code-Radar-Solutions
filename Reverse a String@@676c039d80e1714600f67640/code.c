@@ -1,17 +1,18 @@
 #include <stdio.h>
 #include <string.h>
-char* welcome() {
-    return "Welcome to Code Radar!";
-}
+
 int main() {
     char st[30];
-    scanf("%s",&st);
-    int l=strlen(st);
-    char s[30];
-    for(int i=l-1;i>=0;i--){
-        s[i]=st[i];
-        printf("%s",s);
+    scanf("%s", st);  // No & needed
+    int l = strlen(st);
+    char s[30];  // Array for reversed string
+    
+    // Reverse string properly
+    for(int i=l 1,j=0;i>=0;i--,j++) {
+        s[j] = st[i];  // Correct index mapping
     }
-    printf("You entered: %s", s);
+    s[l] = '\0';  // Null-terminate the string
+    
+    printf("You entered: %s\n", s);
     return 0;
 }
