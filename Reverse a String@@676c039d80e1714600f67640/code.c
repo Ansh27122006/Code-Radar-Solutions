@@ -9,7 +9,6 @@ int main() {
     for(int i=l-1,j=0;i>=0;i--,j++) {
         s[j] = st[i];
     }
-    s[l] = '\0';
     printf("%s", s);
     return 0;
 }
