@@ -13,6 +13,6 @@ int main() {
     }
     s[l] = '\0';  // Null-terminate the string
     
-    printf("You entered: %s\n", s);
+    printf("%s", s);
     return 0;
 }
