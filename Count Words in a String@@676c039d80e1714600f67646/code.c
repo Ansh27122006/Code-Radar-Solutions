@@ -3,7 +3,7 @@
 
 int main() {
     char s[30];
-    scanf("%s", s);
+    fgets(s, sizeof(s), stdin);
     int l = strlen(s);
     int c=0;
     for(int i=0;i<l;i++) {
