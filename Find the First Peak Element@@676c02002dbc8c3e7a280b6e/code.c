@@ -11,7 +11,7 @@ int main() {
     int c=1;
     int l=sizeof(ar)/sizeof(ar[0]);
     for(int i=0;i<l-1;i++){
-        if(ar[i]<ar[i+1] && ar[i]>ar[i+2]){
+        if(ar[i]<ar[i+1] && ar[i+1]>ar[i+2]){
             printf("%d",ar[i+1]);
             c=0;
             break;
