@@ -16,10 +16,11 @@ int main() {
             max=ar[i];
         }
     }
+    int m=-1;
     if(ar[0]!=max){
-        int m=ar[0];
+        m=ar[0];
     }else{
-        int m=ar[1];
+        m=ar[1];
     }
     for(int i=0;i<l;i++){
         if(ar[i]>m && ar[i]!=max){
