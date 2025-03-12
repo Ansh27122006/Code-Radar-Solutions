@@ -10,7 +10,7 @@ int main() {
     }
     int c=1;
     int l=sizeof(ar)/sizeof(ar[0]);
-    int max=ar[0],min=ar[0]
+    int max=ar[0],min=ar[0];
     for(int i=0;i<l;i++){
         if(ar[i]>max){
             max=ar[i]
