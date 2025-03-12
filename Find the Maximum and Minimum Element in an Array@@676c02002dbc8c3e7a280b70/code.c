@@ -13,10 +13,10 @@ int main() {
     int max=ar[0],min=ar[0];
     for(int i=0;i<l;i++){
         if(ar[i]>max){
-            max=ar[i]
+            max=ar[i];
         }
         if(ar[i]<min){
-            min=ar[i]
+            min=ar[i];
         }
     }
     printf("%d %d",min,max);
