@@ -10,11 +10,27 @@ int main() {
     }
     int c=1;
     int l=sizeof(ar)/sizeof(ar[0]);
-    for(int i=0;i<l-1;i++){
-        if(ar[i]<ar[i+1] && ar[i+1]>ar[i+2]){
-            printf("%d",ar[i+1]);
-            c=0;
-            break;
+    for(int i=0;i<l;i++){
+        if(i==l-1){
+            if(ar[i]>ar[i-1]){
+                printf("%d",ar[i]);
+                c=0;
+                break;
+            }
+        }
+        else if(i==0){
+            if(ar[i]>ar[i+1]){
+                printf("%d",ar[i]);
+                c=0;
+                break;
+            }
+        }
+        else{
+            if(ar[i]>ar[i+1] && ar[i]>ar[i-1]){
+                printf("%d",ar[i]);
+                c=0;
+                break;
+            }
         }
     }
     if(c){
