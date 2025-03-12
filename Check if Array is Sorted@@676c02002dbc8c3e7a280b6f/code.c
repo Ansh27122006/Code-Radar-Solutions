@@ -8,5 +8,16 @@ int main() {
         scanf("%d",&v);
         ar[i]=v;
     }
-    printf("Sorted");
+    int c=1;
+    int l=sizeof(ar)/sizeof(ar[0]);
+    for(int i=0;i<l-1;i++){
+        if(ar[i]>ar[i+1]){
+            printf("Not Sorted");
+            c=0;
+            break;
+        }
+    }
+    if(c){
+        printf("Sorted");
+    }
 }
