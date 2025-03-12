@@ -24,11 +24,11 @@ int main() {
     for(int i=0;i<l;i++){
         if(ar[i]>m && ar[i]!=max){
             m=ar[i];
-            c=0
+            c=0;
         }
     }
     if(c){
-        print("-1")
+        print("-1");
     }else{
     printf("%d",m);
     }
