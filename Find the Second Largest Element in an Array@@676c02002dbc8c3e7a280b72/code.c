@@ -16,7 +16,7 @@ int main() {
             max=ar[i];
         }
     }
-    int m=0;
+    int m=-1;
     for(int i=0;i<l;i++){
         if(ar[i]>m && ar[i]!=max){
             m=ar[i];
