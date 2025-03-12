@@ -29,7 +29,7 @@ int main() {
         }
     }
     if(c){
-        print("-1");
+        printf("-1");
     }else{
     printf("%d",m);
     }
