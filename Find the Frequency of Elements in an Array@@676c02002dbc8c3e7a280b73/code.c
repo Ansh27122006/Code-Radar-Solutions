@@ -10,12 +10,12 @@ int main() {
     }
     int l=sizeof(ar)/sizeof(ar[0]);
     for(int i=0;i<l;i++){
-        int c=0
+        int c=0;
         for(int j=0;j<l;j++){
             if(ar[i]==ar[j]){
                 c++;
             }
         }
-        printf("%d %d",i,c);
+        printf("%d %d\n",i,c);
     }
 }
