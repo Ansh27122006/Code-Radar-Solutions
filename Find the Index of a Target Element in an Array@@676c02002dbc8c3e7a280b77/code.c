@@ -1,6 +1,12 @@
 #include <stdio.h>
 int find(int ar[],int t){
-    return 0;
+    l=sizeof(ar)/sizeof(ar[0]);
+    for(int i=0;i<l;i++){
+        if(ar[i]==k){
+            return i;
+        }
+    }
+    return -1;
 }
 int main() {
     int n,k;
