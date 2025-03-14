@@ -1,6 +1,5 @@
 #include <stdio.h>
-int find(int ar[],int t){
-    int l=sizeof(ar)/sizeof(ar[0]);
+int find(int ar[],int t,int l){
     for(int i=0;i<l;i++){
         if(ar[i]==t){
             return i;
@@ -18,5 +17,6 @@ int main() {
         ar[i]=v;
     }
     scanf("%d",&k);
-    printf("%d",find(ar,k));
+    int l=sizeof(ar)/sizeof(ar[0]);
+    printf("%d",find(ar,k,l));
 }
