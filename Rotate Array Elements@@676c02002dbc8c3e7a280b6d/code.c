@@ -9,9 +9,6 @@ int main() {
         ar[i]=v;
     }
     scanf("%d",&k);
-    if(k==10){
-        k=3;
-    }
     int l=sizeof(ar)/sizeof(ar[0]);
     for(int i=l-k;i<l;i++){
         printf("%d\n",ar[i]);
