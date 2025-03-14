@@ -14,9 +14,9 @@ int main() {
     }
     int l=sizeof(ar)/sizeof(ar[0]);
     for(int i=l-k;i<l;i++){
-        printf("%d ",ar[i]);
+        printf("%d\n",ar[i]);
     }
     for(int i=0;i<l-k;i++){
-        printf("%d ",ar[i]);
+        printf("%d\n",ar[i]);
     }
 }
