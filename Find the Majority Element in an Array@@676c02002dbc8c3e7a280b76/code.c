@@ -25,7 +25,7 @@ int main() {
             ind=i;
         }
     }
-    printf(ar[i]);
+    printf(ar[ind]);
 }
 
 
