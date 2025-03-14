@@ -16,6 +16,6 @@ int main() {
                 c++;
             }
         }
-        printf("%d %d\n",i,c);
+        printf("%d %d\n",ar[i],c);
     }
 }
