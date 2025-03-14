@@ -16,7 +16,7 @@ int main() {
         for(int j=0;j<l2;j++){
             if(ar[i]==ar2[j]){
                 found=1;
-                break
+                break;
             }
         }
         if(found==0){
