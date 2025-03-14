@@ -2,7 +2,7 @@
 int find(int ar[],int t){
     int l=sizeof(ar)/sizeof(ar[0]);
     for(int i=0;i<l;i++){
-        if(ar[i]==k){
+        if(ar[i]==t){
             return i;
         }
     }
