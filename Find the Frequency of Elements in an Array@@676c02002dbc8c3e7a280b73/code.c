@@ -20,7 +20,7 @@ int main() {
             }
         }
         if(found==0){
-            ar2[i]=ar[i]
+            ar2[i]=ar[i];
             for(int j=0;j<l;j++){
                 if(ar[i]==ar[j]){
                     c++;
