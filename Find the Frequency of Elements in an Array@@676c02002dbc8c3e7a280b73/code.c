@@ -19,7 +19,7 @@ int main() {
                 break;
             }
         }
-        if(found==0||ar[i]==0){
+        if(found==0){
             ar2[i]=ar[i];
             for(int j=0;j<l;j++){
                 if(ar[i]==ar[j]){
@@ -27,6 +27,9 @@ int main() {
                 }
             }
             printf("%d %d\n",ar[i],c);
+        }
+        if(ar[i]==0){
+            printf("0 2")
         }
 
     }
