@@ -1,6 +1,5 @@
 #include <stdio.h>
 int MEA(int n, int arr[]){
-    int maxFreq=0;maxEle=arr[0]
     for(int i=0;i<l;i++){
         int c=0;
         for(int j=0;j<l;j++){
@@ -23,7 +22,7 @@ int main() {
         scanf("%d",&v);
         ar[i]=v;
     }
-    printf("%d",MEA(n,ar))
+    printf("%d",MEA(n,ar));
 }
 
 
