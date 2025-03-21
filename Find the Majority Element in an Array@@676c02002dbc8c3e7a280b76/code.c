@@ -1,8 +1,8 @@
 #include <stdio.h>
 int MEA(int n, int arr[]){
-    for(int i=0;i<l;i++){
+    for(int i=0;i<n;i++){
         int c=0;
-        for(int j=0;j<l;j++){
+        for(int j=0;j<n;j++){
             if(ar[i]==ar[j]){
                     c++;
             }
