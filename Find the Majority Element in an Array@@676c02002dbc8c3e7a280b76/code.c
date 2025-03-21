@@ -1,14 +1,6 @@
 #include <stdio.h>
-int main() {
-    int n;
-    scanf("%d",&n);
-    int ar[n],ar2[n];
-    for(int i=0;i<n;i++){
-        int v;
-        scanf("%d",&v);
-        ar[i]=v;
-    }
-    int l=sizeof(ar)/sizeof(ar[0]);
+int MEA(int n, int arr[]){
+    int maxFreq=0;maxEle=arr[0]
     for(int i=0;i<l;i++){
         int c=0;
         for(int j=0;j<l;j++){
@@ -16,16 +8,22 @@ int main() {
                     c++;
             }
         }
-        ar2[i]=c;
-    }
-    int m=ar2[0],ind=0;
-    for(int i=0;i<l;i++){
-        if(ar2[i]>=m){
-            m=ar2[i];
-            ind=i;
+        if(c>n/2){
+            return arr[i];
         }
     }
-    printf(ar[ind]);
+    return -1;
+}
+int main() {
+    int n;
+    scanf("%d",&n);
+    int ar[n];
+    for(int i=0;i<n;i++){
+        int v;
+        scanf("%d",&v);
+        ar[i]=v;
+    }
+    printf("%d",MEA(n,ar))
 }
 
 
