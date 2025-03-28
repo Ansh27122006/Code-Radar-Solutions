@@ -1,6 +1,6 @@
 #include <stdio.h>
 int prime(int n){
-    for(int i=0;i<n/2;i++){
+    for(int i=2;i<n/2;i++){
         if(n%i==0){
             return 0;
         }
@@ -9,7 +9,7 @@ int prime(int n){
 }
 int countPrime(int ar[],int n){
     int count =0;
-    for(int i=2;i<n;i++){
+    for(int i=0;i<n;i++){
         if(prime(ar[i])){
             count++;
         }
