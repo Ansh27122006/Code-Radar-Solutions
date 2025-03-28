@@ -1,6 +1,5 @@
 #include <stdio.h>
-int Prime(int n){
-    int c=1;
+int prime(int n){
     for(int i=0;i<n;i++){
         if(n%i==0){
             return 0;
