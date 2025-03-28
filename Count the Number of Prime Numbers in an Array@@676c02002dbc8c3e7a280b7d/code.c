@@ -9,7 +9,7 @@ int prime(int n){
 }
 int countPrime(int ar[],int n){
     int count =0;
-    for(int i=0;i<n;i++){
+    for(int i=2;i<n;i++){
         if(prime(ar[i])){
             count++;
         }
