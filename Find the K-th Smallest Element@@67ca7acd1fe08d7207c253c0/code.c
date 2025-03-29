@@ -17,7 +17,7 @@ int kthSmallest(int arr[],int n,int k){
     sort(arr,n);
     for(int i=0;i<n;i++){
         if(arr[i]==k){
-            rteurn i;
+            return i;
         }
     }
     return -1;
