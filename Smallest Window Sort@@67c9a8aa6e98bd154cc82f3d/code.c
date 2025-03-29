@@ -14,6 +14,7 @@ int sort(int ar[],int n){
     }
 }
 int findUnsortedSubarray(int ar[],int n){
+    int r[n];
     for(int i=0;i<n;i++){
         r[i]=ar[i];
     }
