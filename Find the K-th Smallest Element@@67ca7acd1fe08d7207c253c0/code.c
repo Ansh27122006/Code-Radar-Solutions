@@ -15,5 +15,10 @@ void sort(int ar[],int n){
 }
 int kthSmallest(int arr[],int n,int k){
     sort(arr,n);
-    return arr[k-1];
+    for(int i=0;i<n;i++){
+        if(arr[i]==k){
+            rteurn i;
+        }
+    }
+    return -1;
 }
